@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ChatActivity">
+
+    <!-- BARRA SUPERIOR -->
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/IbRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_regresar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/toolbarIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/IbRegresar"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/perfil_usuario" />
+
+        <TextView
+            android:id="@+id/txt_nombre_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_nombre_usuario"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+        
+        <TextView
+            android:id="@+id/txt_estado_chat"
+            android:text="@string/txt_estado_chat"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt_nombre_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ccc" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatsRV"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_below="@+id/toolbarRL"
+        android:layout_above="@+id/View2"
+        android:padding="5dp"
+        tools:listitem="@layout/item_chat_derecho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/RLMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+
+        <!-- BOTÓN SOBRE (ENVIAR) A LA DERECHA DEL TODO -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/enviarFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            app:fabSize="mini"
+            android:src="@drawable/ico_enviar_chat"
+            android:elevation="0dp" />
+
+        <!-- BOTÓN IMAGEN A LA IZQUIERDA DEL DE ENVIAR, CON MARGEN -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/adjuntarFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/enviarFAB"
+            android:layout_marginEnd="8dp"
+            app:fabSize="mini"
+            android:src="@drawable/ico_imagen_chat"
+            android:elevation="0dp" />
+
+        <!-- EDITTEXT OCUPA EL RESTO DEL ESPACIO -->
+        <EditText
+            android:id="@+id/Et_mensaje_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/adjuntarFAB"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/Et_mensaje_chat"
+            android:padding="10dp"
+            android:inputType="textImeMultiLine|textCapSentences" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/View2"
+        android:background="#ccc"
+        android:layout_above="@id/RLMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

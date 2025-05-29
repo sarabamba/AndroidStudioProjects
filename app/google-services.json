@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616955239052",
+    "project_id": "chat---kotlin-eac20",
+    "storage_bucket": "chat---kotlin-eac20.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616955239052:android:0646e71e05c2c82a42b9a9",
+        "android_client_info": {
+          "package_name": "com.sara.chat_kotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS8uZBk9Z3CWdoJK3oedC59H99ao9E-LY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

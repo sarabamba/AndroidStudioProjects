@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Chat - Kotlin</string>
+    <string name="default_web_client_id">616955239052-s1et49l7v739cf7ftdos4gj0m9d0pq06.apps.googleusercontent.com</string>
+
+    <string name="item_perfil">Perfil</string>
+    <string name="item_usuarios">Usuarios</string>
+    <string name="item_chats">Chats</string>
+
+    <string name="tv_Titulo">Título</string>
+
+    <string name="opcionEmail">Continuar con Email</string>
+    <string name="opcionGoogle">Continuar con Google</string>
+
+    <string name="txt_login">Login</string>
+    <string name="et_Email">Correo electrónico</string>
+    <string name="et_Password">Contraseña</string>
+    <string name="btn_Ingresar">Ingresar</string>
+    <string name="txt_no_tienes_cuenta">¿No tienes una cuenta?</string>
+    <string name="tv_registrarme">Resgistrarme</string>
+
+    <string name="txt_registro">Registro</string>
+    <string name="et_nombres">Nombre</string>
+    <string name="et_Repetir_Password">Repita la contraseña</string>
+    <string name="btn_Registrar">Resgistrar</string>
+
+    <string name="btn_ActualizarInfo">Actualizar</string>
+    <string name="btn_Cerrarsesion">Cerrar Sesión</string>
+    <string name="nombre_de_la_cadena">Texto de la cadena</string>
+
+
+    <string name="txt_nombres">Nombres: </string>
+    <string name="tv_nombres"> -- </string>
+    <string name="txt_email">Email: </string>
+    <string name="tv_email"> -- </string>
+    <string name="txt_proveedor">Proveedor: </string>
+    <string name="tv_proveedor"> -- </string>
+    <string name="txt_t_registro">Miembro desde: </string>
+    <string name="tv_t_registro"> -- </string>
+
+    <string name="txt_titulo_edit">Editar Información</string>
+    <string name="btn_Actualizar">Actualizar</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_uid">uid del usuario</string>
+    <string name="item_nombre">nombre del usuario</string>
+    <string name="item_email">email del usuario</string>
+    <string name="regresar">Regresar</string>
+    <string name="et_buscar_usuario">Buscar usuario</string>
+    <string name="txt_nombre_usuario">Nombres</string>
+    <string name="txt_estado_chat">Online</string>
+    <string name="editar_imagen">Editar imagen de perfil</string>
+    <string name="etBuscar">Buscar</string>
+    <string name="tvFecha">dd/MM/yyyy</string>
+    <string name="Et_mensaje_chat">Escriba aquí</string>
+    <string name="Tv_tiempo_mensaje">dd/MM/aa hh:mmm</string>
+</resources>
